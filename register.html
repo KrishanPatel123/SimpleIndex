@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media.com</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        body {
+            background-color: antiquewhite;
+            position: relative;
+            animation-name: body;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes body{
+            0%,25%{
+                background-color: blueviolet;
+
+            }
+            0%,50%{
+                background-color: coral;
+            }
+            0%,75%{
+                background-color: green;
+            }
+            0%,100%{
+                background-color: turquoise;
+            }
+        }
+
+
+        div {
+            background-color: aqua;
+            text-align: center;
+            width: 600px;
+            height: 300px;
+            margin-left: 30%;
+            margin-top: 50px;
+            border-radius: 15px;
+            border-spacing: 0px;
+            position: fixed;
+            box-sizing: border-box;
+        }
+
+        div:hover {
+            background-color: lightblue;
+            transition-duration: 2s;
+
+        }
+
+        label,
+        input {
+            margin-top: 25px;
+            padding: 4px;
+            border-radius: 10px;
+        }
+
+        .log {
+            padding: 7px;
+            border-radius: 6px;
+            cursor: pointer;
+            background-color: darkcyan;
+            color: white;
+            font-weight: 600;
+            border-color: transparent;
+
+        }
+
+        .log:hover {
+            text-decoration: underline;
+        }
+
+        .log:hover {
+            transition-duration: 2s;
+            background-color: rgb(77, 77, 179);
+        }
+
+        h4 {
+            text-align: center;
+            margin-top: 30px;
+            text-decoration: underline;
+            font-size: 20px;
+        }
+
+        @media (max-width: 858px) {
+            h4{
+                text-align: center;
+                margin-top: 30px;
+            }
+            div {
+                background-color: red;
+                height: auto;
+                border-radius: 15px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h4>Registesion page
+        </h4>
+    </header>
+    <div>
+        <form method="POST">
+            <label>Name</label>
+            <input type="text" name="name" required>
+            <br>
+            <label>Pass</label>
+            <input type="password" name="password" required>
+            <br>
+            <label>Email</label>
+            <input type="email" name="email" required>
+            <br>
+            <label>Number</label>
+            <input type="phone" name="number" required>
+            <br>
+            <input type="submit" required name="submit" value="Register" style="margin-left:25px;" class="log">
+        </form>
+    </div>
+
+
+</body>
+
+</html>

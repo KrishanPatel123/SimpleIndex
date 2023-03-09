@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Page</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url("1900851.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+
+        }
+
+        .main-div {
+            height: 100px;
+            width: 100px;
+            position: relative;
+        }
+
+        .second-div {
+            height: 100px;
+            width: 100px;
+            position: relative;
+
+        }
+
+        .from-main {
+            height: 190px;
+            width: 230px;
+            background-color: transparent;
+            left: 670px;
+            top: 250px;
+            position: relative;
+        }
+
+        input {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .submit {
+            font-weight: 600;
+            border-color: transparent;
+            cursor: pointer;
+        }
+
+        .submit:hover {
+            text-decoration: underline;
+            color: blue;
+            background-color: hotpink;
+            transition-duration: 5s;
+        }
+
+        h3 {
+
+            color: white;
+            top: 30px;
+            left: 670px;
+            font-size: 30px;
+            position: relative;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="second-div">
+            <h3>Login</h3>
+            <form class="from-main" method="POST">
+                <label>UserName
+                    <input type="text" name="user" value="User" placeholder="Email" required style="padding: 8px;">
+                </label>
+                <label>Password
+                    <input type="password" name="Pass" value="Pass" placeholder="Password" required
+                        style="padding: 8px;">
+                </label>
+                <br>
+                <input type="submit" name="Login" value="Login" required style=" margin-left: 70px; padding: 8px;"
+                    class="submit">
+                <p>You don't Have a account? <a href="register.html">Sin-Up</a></p>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
